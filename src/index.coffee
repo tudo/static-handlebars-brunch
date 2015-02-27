@@ -56,6 +56,8 @@ module.exports = class StaticHandlebarsCompiler
           fs.writeFile newPath, html, (err) ->
             callback(err, null)
 
+      callback(null, data)
+
     catch err
       callback err, null
 
